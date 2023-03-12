@@ -1,17 +1,17 @@
 (function () {
   // Создаем шапку
   function createHeader() {
-    const header = document.createElement('div');
-    header.className = 'header';
+    const header = document.createElement("div");
+    header.className = "header";
 
     return header;
   }
 
   // Создаем логотип
   function createLogo() {
-    const link = document.createElement('a');
-    link.href = '#';
-    link.className = 'header__logo';
+    const link = document.createElement("a");
+    link.href = "#";
+    link.className = "header__logo";
     link.innerHTML = `<svg
         width="50"
         height="50"
@@ -31,11 +31,11 @@
 
   // Создаем форму поиска
   function createFormSearch() {
-    const form = document.createElement('form');
-    const input = document.createElement('input');
-    form.className = 'header__form';
-    input.className = 'header__input';
-    input.placeholder = 'Введите запрос';
+    const form = document.createElement("form");
+    const input = document.createElement("input");
+    form.className = "header__form";
+    input.className = "header__input";
+    input.placeholder = "Введите запрос";
 
     form.append(input);
 
@@ -44,10 +44,10 @@
 
   // Создаем контейнер для таллицы
   function createTableContainer() {
-    const tableContainer = document.createElement('div');
-    const tableWrapper = document.createElement('div');
-    tableContainer.className = 'table__container table';
-    tableWrapper.className = 'table__wrapper';
+    const tableContainer = document.createElement("div");
+    const tableWrapper = document.createElement("div");
+    tableContainer.className = "table__container table";
+    tableWrapper.className = "table__wrapper";
 
     tableContainer.append(tableWrapper);
     return { tableContainer, tableWrapper };
@@ -55,62 +55,62 @@
 
   // Создаем заголовок приложения
   function createTitle() {
-    const title = document.createElement('h1');
-    title.className = 'table__title';
-    title.textContent = 'Клиенты';
+    const title = document.createElement("h1");
+    title.className = "table__title";
+    title.textContent = "Клиенты";
 
     return title;
   }
 
   // Создаем таблицу
   function createTable() {
-    const table = document.createElement('table');
-    const thead = document.createElement('thead');
-    const trow = document.createElement('tr');
-    const id = document.createElement('th');
-    const btnId = document.createElement('button');
-    const btnArrowId = document.createElement('span');
-    const fullName = document.createElement('th');
-    const btnFullName = document.createElement('button');
-    const btnArrowName = document.createElement('span');
-    const spanSortFullName = document.createElement('span');
-    const dateCreate = document.createElement('th');
-    const btnDateCreate = document.createElement('button');
-    const btnArrowCreate = document.createElement('span');
-    const change = document.createElement('th');
-    const btnChange = document.createElement('button');
-    const btnArrowChange = document.createElement('span');
-    const contacts = document.createElement('th');
-    const btnContacts = document.createElement('button');
-    const actions = document.createElement('th');
-    const btnActions = document.createElement('button');
+    const table = document.createElement("table");
+    const thead = document.createElement("thead");
+    const trow = document.createElement("tr");
+    const id = document.createElement("th");
+    const btnId = document.createElement("button");
+    const btnArrowId = document.createElement("span");
+    const fullName = document.createElement("th");
+    const btnFullName = document.createElement("button");
+    const btnArrowName = document.createElement("span");
+    const spanSortFullName = document.createElement("span");
+    const dateCreate = document.createElement("th");
+    const btnDateCreate = document.createElement("button");
+    const btnArrowCreate = document.createElement("span");
+    const change = document.createElement("th");
+    const btnChange = document.createElement("button");
+    const btnArrowChange = document.createElement("span");
+    const contacts = document.createElement("th");
+    const btnContacts = document.createElement("button");
+    const actions = document.createElement("th");
+    const btnActions = document.createElement("button");
 
-    table.className = 'table__header';
-    trow.className = 'table__header_row';
-    id.className = 'table__header_cell-id';
-    fullName.className = 'table__header_cell-full-name';
-    dateCreate.className = 'table__header_cell-create';
-    change.className = 'table__header_cell-change';
-    contacts.className = 'table__header_cell-contacts';
-    btnId.textContent = 'ID';
-    btnId.className = 'btn-reset table__btn table__btn-id';
-    btnArrowId.className = 'table__arrow-id';
-    btnFullName.textContent = 'Фамилия Имя Отчество';
-    btnFullName.className = 'btn-reset table__btn table__btn-full-name';
-    btnArrowName.className = 'table__arrow-full-name';
-    spanSortFullName.textContent = 'А-Я';
-    spanSortFullName.className = 'btn-reset table__btn-sort-full-name';
-    btnDateCreate.textContent = 'Дата и время создания';
-    btnDateCreate.className = 'btn-reset table__btn table__btn-create';
-    btnArrowCreate.className = 'table__arrow-create';
-    btnChange.textContent = 'Последние изменения';
-    btnChange.className = 'btn-reset table__btn table__btn-change';
-    btnArrowChange.className = 'table__arrow-change';
-    btnContacts.textContent = 'Контакты';
-    btnContacts.className = 'btn-reset table__btn';
-    actions.className = 'table__header_cell-action';
-    btnActions.textContent = 'Действия';
-    btnActions.className = 'btn-reset table__btn';
+    table.className = "table__header";
+    trow.className = "table__header_row";
+    id.className = "table__header_cell-id";
+    fullName.className = "table__header_cell-full-name";
+    dateCreate.className = "table__header_cell-create";
+    change.className = "table__header_cell-change";
+    contacts.className = "table__header_cell-contacts";
+    btnId.textContent = "ID";
+    btnId.className = "btn-reset table__btn table__btn-id";
+    btnArrowId.className = "table__arrow-id";
+    btnFullName.textContent = "Фамилия Имя Отчество";
+    btnFullName.className = "btn-reset table__btn table__btn-full-name";
+    btnArrowName.className = "table__arrow-full-name";
+    spanSortFullName.textContent = "А-Я";
+    spanSortFullName.className = "btn-reset table__btn-sort-full-name";
+    btnDateCreate.textContent = "Дата и время создания";
+    btnDateCreate.className = "btn-reset table__btn table__btn-create";
+    btnArrowCreate.className = "table__arrow-create";
+    btnChange.textContent = "Последние изменения";
+    btnChange.className = "btn-reset table__btn table__btn-change";
+    btnArrowChange.className = "table__arrow-change";
+    btnContacts.textContent = "Контакты";
+    btnContacts.className = "btn-reset table__btn";
+    actions.className = "table__header_cell-action";
+    btnActions.textContent = "Действия";
+    btnActions.className = "btn-reset table__btn";
 
     // Добавляем кнопки в тег th
     id.append(btnId);
@@ -143,19 +143,19 @@
 
   // Создаем тело таблицы
   function createTableBody() {
-    const tbody = document.createElement('tbody');
-    tbody.className = 'table__body';
+    const tbody = document.createElement("tbody");
+    tbody.className = "table__body";
 
     return tbody;
   }
 
   // Кнопка добавления нового клиента
   function createBtnAddClient() {
-    const btn = document.createElement('button');
-    const decor = document.createElement('span');
-    btn.className = 'btn-reset btn-add__client';
-    btn.textContent = 'Добавить клиента';
-    decor.className = 'btn-add__decor';
+    const btn = document.createElement("button");
+    const decor = document.createElement("span");
+    btn.className = "btn-reset btn-add__client";
+    btn.textContent = "Добавить клиента";
+    decor.className = "btn-add__decor";
     decor.innerHTML = `<svg width="23" height="16" viewBox="0 0 23 16" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path d="M14.5 8C16.71 8 18.5 6.21 18.5 4C18.5 1.79 16.71 0 14.5 0C12.29 0 10.5 1.79 10.5 4C10.5 6.21 12.29 8 14.5 8ZM5.5 6V3H3.5V6H0.5V8H3.5V11H5.5V8H8.5V6H5.5ZM14.5 10C11.83 10 6.5 11.34 6.5 14V16H22.5V14C22.5 11.34 17.17 10 14.5 10Z" fill="#9873FF"/>
     </svg>
@@ -168,7 +168,7 @@
 
   // Получаем полное ФИО
   function getFullName(data) {
-    if (data.lastName === '') {
+    if (data.lastName === "") {
       return `${data.surname[0].toUpperCase()}${data.surname
         .slice(1)
         .toLowerCase()} ${data.name[0].toUpperCase()}${data.name
@@ -190,9 +190,9 @@
     const date = dateValue
       .match(/\d{4}-\d{2}-\d{2}/gm)
       .toString()
-      .split('-')
+      .split("-")
       .reverse()
-      .join('.');
+      .join(".");
 
     return date;
   }
@@ -206,52 +206,52 @@
 
   // Создаем элемент клиента
   function createItem(data, handlers) {
-    const userRow = document.createElement('tr');
-    const idUser = document.createElement('td');
-    const fullName = document.createElement('td');
-    const dateCreate = document.createElement('td');
-    const dateFullCreate = document.createElement('span');
-    const dateTimeCreate = document.createElement('span');
-    const lastEdit = document.createElement('td');
-    const lastEditDate = document.createElement('span');
-    const lastEditTime = document.createElement('span');
-    const contacts = document.createElement('td');
-    const action = document.createElement('td');
-    const editButton = document.createElement('button');
-    const deleteButton = document.createElement('button');
+    const userRow = document.createElement("tr");
+    const idUser = document.createElement("td");
+    const fullName = document.createElement("td");
+    const dateCreate = document.createElement("td");
+    const dateFullCreate = document.createElement("span");
+    const dateTimeCreate = document.createElement("span");
+    const lastEdit = document.createElement("td");
+    const lastEditDate = document.createElement("span");
+    const lastEditTime = document.createElement("span");
+    const contacts = document.createElement("td");
+    const action = document.createElement("td");
+    const editButton = document.createElement("button");
+    const deleteButton = document.createElement("button");
 
-    userRow.className = 'table__user user';
-    idUser.className = 'user__id';
+    userRow.className = "table__user user";
+    idUser.className = "user__id";
     idUser.textContent = data.id;
-    fullName.className = 'user__fullName';
+    fullName.className = "user__fullName";
     fullName.textContent = getFullName(data);
-    dateCreate.className = 'user__create create-date';
-    dateFullCreate.className = 'create-date__full';
+    dateCreate.className = "user__create create-date";
+    dateFullCreate.className = "create-date__full";
     dateFullCreate.textContent = getDate(data.createdAt);
-    dateTimeCreate.className = 'create-date__time';
+    dateTimeCreate.className = "create-date__time";
     dateTimeCreate.textContent = getTime(data.createdAt);
-    lastEdit.className = 'user__edit edit-user';
-    lastEditDate.className = 'edit-user__date';
+    lastEdit.className = "user__edit edit-user";
+    lastEditDate.className = "edit-user__date";
     lastEditDate.textContent = getDate(data.updatedAt);
-    lastEditTime.className = 'edit-user__time';
+    lastEditTime.className = "edit-user__time";
     lastEditTime.textContent = getTime(data.updatedAt);
-    contacts.className = 'user__contacts';
-    action.className = 'user__action action';
-    editButton.className = 'btn-reset action__btn action__btn-change';
-    editButton.textContent = 'Изменить';
-    deleteButton.className = 'btn-reset action__btn action__btn-dalete';
-    deleteButton.textContent = 'Удалить';
+    contacts.className = "user__contacts";
+    action.className = "user__action action";
+    editButton.className = "btn-reset action__btn action__btn-change";
+    editButton.textContent = "Изменить";
+    deleteButton.className = "btn-reset action__btn action__btn-dalete";
+    deleteButton.textContent = "Удалить";
 
-    deleteButton.addEventListener('click', () => {
+    deleteButton.addEventListener("click", () => {
       document
-        .getElementById('container')
+        .getElementById("container")
         .append(deleteUserModal(handlers, data));
     });
 
     if (data.contacts.length > 5) {
-      contacts.classList.add('user__contacts-active');
+      contacts.classList.add("user__contacts-active");
     } else {
-      contacts.classList.remove('user__contacts-active');
+      contacts.classList.remove("user__contacts-active");
     }
 
     userRow.append(idUser);
@@ -267,7 +267,7 @@
     action.append(editButton);
     action.append(deleteButton);
 
-    editButton.addEventListener('click', () => {
+    editButton.addEventListener("click", () => {
       handlers.editUserModal(data);
     });
 
@@ -285,14 +285,14 @@
 
   // Создаем элемент контакта
   function createContactElement(contact, currentId, userId) {
-    const contactItem = document.createElement('span');
-    contactItem.className = 'user__contact__item';
+    const contactItem = document.createElement("span");
+    contactItem.className = "user__contact__item";
 
     const type = contact.type;
 
     switch (type) {
-      case 'Телефон':
-        contactItem.classList.add('user__contact__item-tel');
+      case "Телефон":
+        contactItem.classList.add("user__contact__item-tel");
         contactItem.innerHTML = `<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
         <g opacity="0.7">
         <circle cx="8" cy="8" r="8" fill="#9873FF"/>
@@ -301,13 +301,13 @@
         </svg>
         `;
         break;
-      case 'Email':
+      case "Email":
         contactItem.innerHTML = `<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path opacity="0.7" fill-rule="evenodd" clip-rule="evenodd" d="M8 16C12.4183 16 16 12.4183 16 8C16 3.58172 12.4183 0 8 0C3.58172 0 0 3.58172 0 8C0 12.4183 3.58172 16 8 16ZM4 5.75C4 5.3375 4.36 5 4.8 5H11.2C11.64 5 12 5.3375 12 5.75V10.25C12 10.6625 11.64 11 11.2 11H4.8C4.36 11 4 10.6625 4 10.25V5.75ZM8.424 8.1275L11.04 6.59375C11.14 6.53375 11.2 6.4325 11.2 6.32375C11.2 6.0725 10.908 5.9225 10.68 6.05375L8 7.625L5.32 6.05375C5.092 5.9225 4.8 6.0725 4.8 6.32375C4.8 6.4325 4.86 6.53375 4.96 6.59375L7.576 8.1275C7.836 8.28125 8.164 8.28125 8.424 8.1275Z" fill="#9873FF"/>
         </svg>
         `;
         break;
-      case 'Vk':
+      case "Vk":
         contactItem.innerHTML = `<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
         <g opacity="0.7">
         <path d="M8 0C3.58187 0 0 3.58171 0 8C0 12.4183 3.58187 16 8 16C12.4181 16 16 12.4183 16 8C16 3.58171 12.4181 0 8 0ZM12.058 8.86523C12.4309 9.22942 12.8254 9.57217 13.1601 9.97402C13.3084 10.1518 13.4482 10.3356 13.5546 10.5423C13.7065 10.8371 13.5693 11.1604 13.3055 11.1779L11.6665 11.1776C11.2432 11.2126 10.9064 11.0419 10.6224 10.7525C10.3957 10.5219 10.1853 10.2755 9.96698 10.037C9.87777 9.93915 9.78382 9.847 9.67186 9.77449C9.44843 9.62914 9.2543 9.67366 9.1263 9.90707C8.99585 10.1446 8.96606 10.4078 8.95362 10.6721C8.93577 11.0586 8.81923 11.1596 8.43147 11.1777C7.60291 11.2165 6.81674 11.0908 6.08606 10.6731C5.44147 10.3047 4.94257 9.78463 4.50783 9.19587C3.66126 8.04812 3.01291 6.78842 2.43036 5.49254C2.29925 5.2007 2.39517 5.04454 2.71714 5.03849C3.25205 5.02817 3.78697 5.02948 4.32188 5.03799C4.53958 5.04143 4.68362 5.166 4.76726 5.37142C5.05633 6.08262 5.4107 6.75928 5.85477 7.38684C5.97312 7.55396 6.09391 7.72059 6.26594 7.83861C6.45582 7.9689 6.60051 7.92585 6.69005 7.71388C6.74734 7.57917 6.77205 7.43513 6.78449 7.29076C6.82705 6.79628 6.83212 6.30195 6.75847 5.80943C6.71263 5.50122 6.53929 5.30218 6.23206 5.24391C6.07558 5.21428 6.0985 5.15634 6.17461 5.06697C6.3067 4.91245 6.43045 4.81686 6.67777 4.81686L8.52951 4.81653C8.82136 4.87382 8.88683 5.00477 8.92644 5.29874L8.92808 7.35656C8.92464 7.47032 8.98521 7.80751 9.18948 7.88198C9.35317 7.936 9.4612 7.80473 9.55908 7.70111C10.0032 7.22987 10.3195 6.67368 10.6029 6.09801C10.7279 5.84413 10.8358 5.58142 10.9406 5.31822C11.0185 5.1236 11.1396 5.02785 11.3593 5.03112L13.1424 5.03325C13.195 5.03325 13.2483 5.03374 13.3004 5.04274C13.6009 5.09414 13.6832 5.22345 13.5903 5.5166C13.4439 5.97721 13.1596 6.36088 12.8817 6.74553C12.5838 7.15736 12.2661 7.55478 11.9711 7.96841C11.7001 8.34652 11.7215 8.53688 12.058 8.86523Z" fill="#9873FF"/>
@@ -315,7 +315,7 @@
         </svg>
         `;
         break;
-      case 'Facebook':
+      case "Facebook":
         contactItem.innerHTML = `<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
         <g opacity="0.7">
         <path d="M7.99999 0C3.6 0 0 3.60643 0 8.04819C0 12.0643 2.928 15.3976 6.75199 16V10.3775H4.71999V8.04819H6.75199V6.27309C6.75199 4.25703 7.94399 3.14859 9.77599 3.14859C10.648 3.14859 11.56 3.30121 11.56 3.30121V5.28514H10.552C9.55999 5.28514 9.24799 5.90362 9.24799 6.53815V8.04819H11.472L11.112 10.3775H9.24799V16C11.1331 15.7011 12.8497 14.7354 14.0879 13.2772C15.3261 11.819 16.0043 9.96437 16 8.04819C16 3.60643 12.4 0 7.99999 0Z" fill="#9873FF"/>
@@ -323,7 +323,7 @@
         </svg>
         `;
         break;
-      case 'Другое':
+      case "Другое":
         contactItem.innerHTML = `<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path opacity="0.7" fill-rule="evenodd" clip-rule="evenodd" d="M8 16C12.4183 16 16 12.4183 16 8C16 3.58172 12.4183 0 8 0C3.58172 0 0 3.58172 0 8C0 12.4183 3.58172 16 8 16ZM3 8C3 5.24 5.24 3 8 3C10.76 3 13 5.24 13 8C13 10.76 10.76 13 8 13C5.24 13 3 10.76 3 8ZM9.5 6C9.5 5.17 8.83 4.5 8 4.5C7.17 4.5 6.5 5.17 6.5 6C6.5 6.83 7.17 7.5 8 7.5C8.83 7.5 9.5 6.83 9.5 6ZM5 9.99C5.645 10.96 6.75 11.6 8 11.6C9.25 11.6 10.355 10.96 11 9.99C10.985 8.995 8.995 8.45 8 8.45C7 8.45 5.015 8.995 5 9.99Z" fill="#9873FF"/>
         </svg>
@@ -350,87 +350,105 @@
   // Создаем модальное окно
   function createModalAddClient(handlers, editUser, dataUser) {
     // Создаем контейнер и заголовок
-    const container = document.createElement('div');
-    const wrapper = document.createElement('div');
-    const title = document.createElement('h2');
-    const idUser = document.createElement('span');
+    const container = document.createElement("div");
+    const wrapper = document.createElement("div");
+    const title = document.createElement("h2");
+    const idUser = document.createElement("span");
 
-    container.className = 'modal__container modal';
-    wrapper.className = 'modal__wrapper';
-    title.className = 'modal__title';
-    idUser.className = 'modal__id';
+    container.className = "modal__container modal";
+    wrapper.className = "modal__wrapper";
+    title.className = "modal__title";
+    idUser.className = "modal__id";
     idUser.textContent = `ID: ${dataUser.id}`;
 
     // Создаем форму
-    const form = document.createElement('form');
+    const form = document.createElement("form");
 
-    form.className = 'modal__form';
-    form.id = 'modal__form';
+    form.className = "modal__form";
+    form.id = "modal__form";
+
+    const validation = new JustValidate(form, {
+      errorFieldCssClass: "is-invalid",
+    });
 
     // Поля ввода ФИО
-    const surnameWrapper = document.createElement('div');
-    const surnameInput = document.createElement('input');
-    const nameWrapper = document.createElement('div');
-    const nameInput = document.createElement('input');
-    const lastNameWrapper = document.createElement('div');
-    const lastNameInput = document.createElement('input');
+    const surnameWrapper = document.createElement("div");
+    const surnameInput = document.createElement("input");
+    const nameWrapper = document.createElement("div");
+    const nameInput = document.createElement("input");
+    const lastNameWrapper = document.createElement("div");
+    const lastNameInput = document.createElement("input");
+
+    validation
+      .addField(nameInput, [
+        {
+          rule: "required",
+          errorMessage: "Обязательное поле",
+        },
+      ])
+      .addField(surnameInput, [
+        {
+          rule: "required",
+          errorMessage: "Обязательное поле",
+        },
+      ]);
 
     surnameWrapper.className =
-      'modal__input-wrapper modal__input-wrapper--surname';
-    nameWrapper.className = 'modal__input-wrapper modal__input-wrapper--name';
+      "modal__input-wrapper modal__input-wrapper--surname";
+    nameWrapper.className = "modal__input-wrapper modal__input-wrapper--name";
 
     lastNameWrapper.className =
-      'modal__input-wrapper modal__input-wrapper--last-name';
-    surnameInput.className = 'modal__input';
-    surnameInput.value = '';
-    surnameInput.id = 'modal__input--surname';
-    nameInput.className = 'modal__input modal__input--name';
-    nameInput.value = '';
-    nameInput.id = 'modal__input--name';
+      "modal__input-wrapper modal__input-wrapper--last-name";
+    surnameInput.className = "modal__input";
+    surnameInput.value = "";
+    surnameInput.id = "modal__input--surname";
+    nameInput.className = "modal__input modal__input--name";
+    nameInput.value = "";
+    nameInput.id = "modal__input--name";
 
-    lastNameInput.className = 'modal__input modal__input--last-name';
-    lastNameInput.value = '';
-    lastNameInput.id = 'modal__input--last-name';
+    lastNameInput.className = "modal__input modal__input--last-name";
+    lastNameInput.value = "";
+    lastNameInput.id = "modal__input--last-name";
 
     // Поле "добавить контакт" в форме
-    const contacts = document.createElement('div');
-    const list = document.createElement('ul');
-    const btnAddContact = document.createElement('button');
-    const decor = document.createElement('span');
+    const contacts = document.createElement("div");
+    const list = document.createElement("ul");
+    const btnAddContact = document.createElement("button");
+    const decor = document.createElement("span");
 
-    const listActive = 'contacts__list--active';
-    const contactsActive = 'contacts--active';
+    const listActive = "contacts__list--active";
+    const contactsActive = "contacts--active";
 
-    contacts.className = 'modal__contacts contacts';
-    list.className = 'list-reset contacts__list';
-    btnAddContact.textContent = 'Добавить контакт';
-    btnAddContact.className = 'btn-reset contacts__btn';
-    decor.className = 'contacts__btn-decor';
+    contacts.className = "modal__contacts contacts";
+    list.className = "list-reset contacts__list";
+    btnAddContact.textContent = "Добавить контакт";
+    btnAddContact.className = "btn-reset contacts__btn";
+    decor.className = "contacts__btn-decor";
 
     btnAddContact.append(decor);
     // Создаем кнопку "сохранить", "отмена", крестик
-    const btnSave = document.createElement('button');
-    const btnCancel = document.createElement('button');
-    const btnClose = document.createElement('button');
-    const lineOne = document.createElement('span');
-    const lineTwo = document.createElement('span');
+    const btnSave = document.createElement("button");
+    const btnCancel = document.createElement("button");
+    const btnClose = document.createElement("button");
+    const lineOne = document.createElement("span");
+    const lineTwo = document.createElement("span");
 
-    btnSave.textContent = 'Сохранить';
-    btnSave.className = 'btn-reset modal__save';
-    btnCancel.textContent = 'Отмена';
-    btnCancel.className = 'btn-reset modal__cancel';
-    btnClose.className = 'btn-reset modal__close close';
-    lineOne.className = 'close__line close__line-one';
-    lineTwo.className = 'close__line close__line-two';
+    btnSave.textContent = "Сохранить";
+    btnSave.className = "btn-reset modal__save";
+    btnCancel.textContent = "Отмена";
+    btnCancel.className = "btn-reset modal__cancel";
+    btnClose.className = "btn-reset modal__close close";
+    lineOne.className = "close__line close__line-one";
+    lineTwo.className = "close__line close__line-two";
 
     // Изменяем форму в зависимости от действия
     if (editUser) {
-      title.textContent = 'Изменить данные';
-      btnCancel.textContent = 'Удалить клиента';
+      title.textContent = "Изменить данные";
+      btnCancel.textContent = "Удалить клиента";
       wrapper.append(idUser);
 
       for (const contact of dataUser.contacts) {
-        list.append(createItemContact(contacts, btnAddContact, contact));
+        list.append(createItemContact(contacts, btnAddContact, contact, true));
       }
 
       surnameInput.value = `${dataUser.surname[0].toUpperCase()}${dataUser.surname
@@ -446,52 +464,67 @@
           ? `${dataUser.lastName[0].toUpperCase()}${dataUser.lastName
               .slice(1)
               .toLowerCase()}`
-          : '';
+          : "";
 
       if (dataUser.contacts.length !== 0) {
         list.classList.add(listActive);
         contacts.classList.add(contactsActive);
       }
 
-      wrapper.style.minHeight = '400px';
+      wrapper.style.minHeight = "400px";
 
       if (dataUser.contacts.length === 1) {
-        wrapper.classList.add('modal__wrapper-one');
+        wrapper.classList.add("modal__wrapper-one");
       } else if (dataUser.contacts.length > 1) {
-        wrapper.classList.remove('modal__wrapper-one');
-        wrapper.classList.add('modal__wrapper-two');
+        wrapper.classList.remove("modal__wrapper-one");
+        wrapper.classList.add("modal__wrapper-two");
       }
     } else {
-      title.textContent = 'Новый клиент';
+      title.textContent = "Новый клиент";
     }
 
     // Назначение кнопки "Сохранить" в зависимости от ситуации
-    form.addEventListener('submit', (e) => {
+    form.addEventListener("submit", (e) => {
       e.preventDefault();
-      const data = {
-        name: nameInput.value.toLowerCase().trim(),
-        surname: surnameInput.value.toLowerCase().trim(),
-        lastName: lastNameInput.value.toLowerCase().trim(),
-        contacts: getArrayContactData(),
-      };
 
-      editUser
-        ? handlers.onEdit(data, container, dataUser.id)
-        : handlers.onSave(data, container);
+      let result = null;
 
-      validation();
+      const inputAll = document.querySelectorAll(".contacts__value");
+
+      for (const item of inputAll) {
+        if (item.value === "") {
+          result = true;
+        } else {
+          result = false;
+        }
+      }
+
+      if (nameInput.value === "" || surnameInput.value === "" || result) {
+        return;
+      } else {
+        const data = {
+          name: nameInput.value.toLowerCase().trim(),
+          surname: surnameInput.value.toLowerCase().trim(),
+          lastName: lastNameInput.value.toLowerCase().trim(),
+          contacts: getArrayContactData(),
+        };
+
+        editUser
+          ? handlers.onEdit(data, container, dataUser.id)
+          : handlers.onSave(data, container);
+      }
     });
 
-    btnAddContact.addEventListener('click', (e) => {
+    btnAddContact.addEventListener("click", (e) => {
       e.preventDefault();
 
-      const contactsItem = document.querySelectorAll('.contacts__item');
+      const contactsItem = document.querySelectorAll(".contacts__item");
 
       if (contactsItem.length > 0) {
-        wrapper.classList.remove('modal__wrapper-one');
-        wrapper.classList.add('modal__wrapper-two');
+        wrapper.classList.remove("modal__wrapper-one");
+        wrapper.classList.add("modal__wrapper-two");
       } else {
-        wrapper.classList.add('modal__wrapper-one');
+        wrapper.classList.add("modal__wrapper-one");
       }
 
       if (contactsItem.length < 10) {
@@ -505,30 +538,30 @@
       }
 
       if (contactsItem.length >= 4) {
-        list.classList.add('contacts__list-max');
+        list.classList.add("contacts__list-max");
       } else if (contactsItem.length < 6) {
-        list.classList.remove('contacts__list-max');
+        list.classList.remove("contacts__list-max");
       }
     });
 
-    btnClose.addEventListener('click', () => {
-      container.classList.toggle('modal__container-active');
-      list.innerHTML = '';
+    btnClose.addEventListener("click", () => {
+      container.classList.toggle("modal__container-active");
+      list.innerHTML = "";
       list.classList.remove(listActive);
       handlers.onClose(container);
     });
 
-    btnCancel.addEventListener('click', (e) => {
+    btnCancel.addEventListener("click", (e) => {
       e.preventDefault();
 
       if (editUser) {
         container.remove();
         document
-          .getElementById('container')
+          .getElementById("container")
           .append(deleteUserModal(handlers, dataUser));
       } else {
-        container.classList.toggle('modal__container-active');
-        list.innerHTML = '';
+        container.classList.toggle("modal__container-active");
+        list.innerHTML = "";
         list.classList.remove(listActive);
         handlers.onClose(container);
       }
@@ -556,77 +589,98 @@
     return container;
   }
 
-  // Валидация
-  function validation() {
-    const validation = new JustValidate('#modal__form', {
-      errorFieldCssClass: 'is-invalid',
-    });
+  // Валидация контактов
+  // function validate(form) {
+  //   const validation = new JustValidate(form, {
+  //     errorFieldCssClass: "is-invalid",
+  //   });
 
-    validation
-      .addField('#modal__input--last-name', [
-        {
-          rule: 'required',
-          errorMessage: 'Обязательное поле',
-        },
-      ])
-      .addField('#modal__input--name', [
-        {
-          rule: 'required',
-          errorMessage: 'Обязательное поле',
-        },
-      ]);
-  }
+  //   const valueInputAll = document.querySelectorAll(".contacts__value");
+
+  //   for (let i = 0; i < valueInputAll.length; i++) {
+  //     valueInputAll[i].id = `contacts__value--${i + 1}`;
+  //     validation.addField(
+  //       document.querySelector(`#contacts__value--${i + 1}`),
+  //       [
+  //         {
+  //           rule: "required",
+  //           errorMessage: "Обязательное поле",
+  //         },
+  //       ]
+  //     );
+  //   }
+  // }
 
   // Создаем item контакта
-  function createItemContact(contacts, btnAddContact, contact = false) {
+  function createItemContact(
+    contacts,
+    btnAddContact,
+    contact = false,
+    value = false
+  ) {
     // Создаем поля с контактами в форме
-    const item = document.createElement('li');
-    const select = document.createElement('select');
-    const optionTel = document.createElement('option');
-    const optionOther = document.createElement('option');
-    const optionEmail = document.createElement('option');
-    const optionVk = document.createElement('option');
-    const optionFb = document.createElement('option');
-    const valueOption = document.createElement('input');
-    const deleteValue = document.createElement('button');
+    const item = document.createElement("li");
+    const select = document.createElement("select");
+    const optionTel = document.createElement("option");
+    const optionOther = document.createElement("option");
+    const optionEmail = document.createElement("option");
+    const optionVk = document.createElement("option");
+    const optionFb = document.createElement("option");
+    const valueOption = document.createElement("input");
+    const deleteValue = document.createElement("button");
 
-    select.className = 'contacts__select';
-    item.className = 'contacts__item';
-    optionTel.textContent = 'Телефон';
-    optionTel.className = 'contacts__option';
-    optionEmail.textContent = 'Email';
-    optionEmail.className = 'contacts__option';
-    optionVk.textContent = 'Vk';
-    optionVk.className = 'contacts__option';
-    optionFb.textContent = 'Facebook';
-    optionFb.className = 'contacts__option';
-    optionOther.textContent = 'Другое';
-    optionOther.className = 'contacts__option';
-    valueOption.placeholder = 'Введите данные контакта';
-    valueOption.className = 'contacts__value';
-    valueOption.id = 'contacts__value';
-    deleteValue.className = 'btn-reset contacts__delete';
-    deleteValue.id = 'contacts__delete';
+    const error = document.createElement("span");
+    error.classList = "contacts__error";
 
-    deleteValue.addEventListener('click', (e) => {
+    select.className = "contacts__select";
+    item.className = "contacts__item";
+    optionTel.textContent = "Телефон";
+    optionTel.className = "contacts__option";
+    optionEmail.textContent = "Email";
+    optionEmail.className = "contacts__option";
+    optionVk.textContent = "Vk";
+    optionVk.className = "contacts__option";
+    optionFb.textContent = "Facebook";
+    optionFb.className = "contacts__option";
+    optionOther.textContent = "Другое";
+    optionOther.className = "contacts__option";
+    valueOption.placeholder = "Введите данные контакта";
+    valueOption.className = "contacts__value";
+    valueOption.id = "contacts__value";
+    deleteValue.className = "btn-reset contacts__delete";
+    deleteValue.id = "contacts__delete";
+
+    const instance = tippy(deleteValue, {
+      content: "Удалить контакт",
+    });
+
+    if (value) {
+      instance.setContent("Очистить контакт");
+    } else {
+      instance.setContent("Удалить контакт");
+    }
+
+    deleteValue.addEventListener("click", (e) => {
       e.preventDefault();
 
-      valueOption.value === '' ? item.remove() : (valueOption.value = '');
-      if (document.querySelectorAll('.contacts__item').length === 0) {
-        document.querySelector('.modal__wrapper').style.top = '168px';
+      instance.setContent("Удалить контакт");
+
+      valueOption.value === "" ? item.remove() : (valueOption.value = "");
+      if (document.querySelectorAll(".contacts__item").length === 0) {
+        document.querySelector(".modal__wrapper").style.top = "168px";
         document
-          .querySelector('.contacts__list')
-          .classList.remove('contacts__list--active');
+          .querySelector(".contacts__list")
+          .classList.remove("contacts__list--active");
         document
-          .querySelector('.contacts')
-          .classList.remove('contacts--active');
+          .querySelector(".contacts")
+          .classList.remove("contacts--active");
       }
 
-      if (document.querySelectorAll('.contacts__item').length === 1) {
-        document.querySelector('.modal__wrapper').style.top = '139px';
+      if (document.querySelectorAll(".contacts__item").length === 1) {
+        document.querySelector(".modal__wrapper").style.top = "139px";
       }
 
-      if (document.querySelectorAll('.contacts__item').length < 10) {
+      if (document.querySelectorAll(".contacts__item").length < 10) {
         contacts.append(btnAddContact);
       }
     });
@@ -641,46 +695,42 @@
     select.append(optionOther);
 
     if (!contact) {
-      select.value = '';
-      valueOption.value = '';
-      Inputmask('+7 (999) 999-99-99').mask(valueOption);
+      select.value = "";
+      valueOption.value = "";
+      Inputmask("+7 (999) 999-99-99").mask(valueOption);
     } else {
       select.value = contact.type;
       valueOption.value = contact.value;
-      if (select.value === 'Телефон')
-        Inputmask('+7 (999) 999-99-99').mask(valueOption);
+      if (select.value === "Телефон")
+        Inputmask("+7 (999) 999-99-99").mask(valueOption);
     }
 
-    select.addEventListener('change', () => {
-      if (select.value === 'Телефон') {
-        Inputmask('+7 (999) 999-99-99').mask(valueOption);
+    select.addEventListener("change", () => {
+      if (select.value === "Телефон") {
+        Inputmask("+7 (999) 999-99-99").mask(valueOption);
       } else {
         Inputmask.remove(valueOption);
       }
-      valueOption.value = '';
+      valueOption.value = "";
     });
 
-    tippy('#contacts__delete', {
-      content: `Удалить контакт`,
+    valueOption.addEventListener("input", () => {
+      if (valueOption.value === "") {
+        item.append(error);
+        error.innerText = "Ошибка";
+      } else if (valueOption.value.length < 3) {
+        item.append(error);
+        error.innerText = "Длина меньше 3 символов";
+      } else {
+        error.remove();
+      }
+
+      instance.setContent("Очистить контакт");
     });
-
-    // tippy(document.getElementById('contacts__delete'), {
-    //   content: `Удалить контакт`,
-    // });
-
-    // setTimeout(console.log(document.getElementById('contacts__delete')), 100);
-    // const instanse = tippy('#contacts__delete', {
-    //   content: `${
-    //     valueOption.value.length === 0 ? 'Удалить контакт' : 'Очистить контакт'
-    //   }`,
-    // });
-
-    // console.log(instanse);
-    // deleteValue.addEventListener('click', () => instanse.destroy());
 
     const choices = new Choices(select, {
       searchEnabled: false,
-      itemSelectText: '',
+      itemSelectText: "",
       shouldSort: false,
     });
 
@@ -691,9 +741,10 @@
   function getArrayContactData() {
     const contact = [];
     const typeContact = document.querySelectorAll(
-      '.choices__list.choices__list--single'
+      ".choices__list.choices__list--single"
     );
-    const valueContact = document.querySelectorAll('.contacts__value');
+    const valueContact = document.querySelectorAll(".contacts__value");
+
     function Contact(type, value) {
       const contact = {
         type: type,
@@ -708,30 +759,30 @@
 
   // Создаем окно удаления
   function deleteUserModal(handlers, data) {
-    const modal = document.createElement('div');
-    const modalWrapper = document.createElement('div');
-    const title = document.createElement('h2');
-    const description = document.createElement('p');
-    const btnClose = document.createElement('button');
-    const lineOne = document.createElement('span');
-    const lineTwo = document.createElement('span');
-    const deleteUser = document.createElement('button');
-    const cancel = document.createElement('button');
+    const modal = document.createElement("div");
+    const modalWrapper = document.createElement("div");
+    const title = document.createElement("h2");
+    const description = document.createElement("p");
+    const btnClose = document.createElement("button");
+    const lineOne = document.createElement("span");
+    const lineTwo = document.createElement("span");
+    const deleteUser = document.createElement("button");
+    const cancel = document.createElement("button");
 
-    modal.className = 'modal__delete delete';
-    modalWrapper.className = 'delete__wrapper';
-    title.className = 'delete__title title';
-    title.textContent = 'Удалить клиента';
-    description.className = 'delete__descr';
+    modal.className = "modal__delete delete";
+    modalWrapper.className = "delete__wrapper";
+    title.className = "delete__title title";
+    title.textContent = "Удалить клиента";
+    description.className = "delete__descr";
     description.textContent =
-      'Вы действительно хотите удалить данного клиента?';
-    btnClose.className = 'btn-reset modal__close close delete__close';
-    lineOne.className = 'close__line close__line-one';
-    lineTwo.className = 'close__line close__line-two';
-    deleteUser.className = 'btn-reset delete__btn';
-    deleteUser.textContent = 'Удалить';
-    cancel.className = 'btn-reset delete__cancel';
-    cancel.textContent = 'Отмена';
+      "Вы действительно хотите удалить данного клиента?";
+    btnClose.className = "btn-reset modal__close close delete__close";
+    lineOne.className = "close__line close__line-one";
+    lineTwo.className = "close__line close__line-two";
+    deleteUser.className = "btn-reset delete__btn";
+    deleteUser.textContent = "Удалить";
+    cancel.className = "btn-reset delete__cancel";
+    cancel.textContent = "Отмена";
 
     modal.append(modalWrapper);
     modalWrapper.append(title);
@@ -742,15 +793,15 @@
     btnClose.append(lineOne);
     btnClose.append(lineTwo);
 
-    deleteUser.addEventListener('click', () => {
+    deleteUser.addEventListener("click", () => {
       handlers.onDelete(data, modal);
     });
 
-    btnClose.addEventListener('click', () => {
+    btnClose.addEventListener("click", () => {
       handlers.onClose(modal);
     });
 
-    cancel.addEventListener('click', () => {
+    cancel.addEventListener("click", () => {
       handlers.onClose(modal);
     });
 
@@ -760,13 +811,13 @@
   // Сортировка
   async function sorting(prop, userItem, tbody, handlers, data, dir = false) {
     const copyList = [...data];
-    tbody.innerHTML = '';
+    tbody.innerHTML = "";
     let sort = null;
     Object.keys(copyList[0]).map((el) =>
-      prop === 'name' && el === prop
+      prop === "name" && el === prop
         ? (sort = copyList.sort((a, b) => {
-            let fullNameA = a['surname'] + a['name'] + a['lastName'];
-            let fullNameB = b['surname'] + b['name'] + b['lastName'];
+            let fullNameA = a["surname"] + a["name"] + a["lastName"];
+            let fullNameB = b["surname"] + b["name"] + b["lastName"];
             if (!dir ? fullNameA < fullNameB : fullNameA > fullNameB) return -1;
           }))
         : (sort = copyList.sort((a, b) => {
@@ -779,13 +830,13 @@
 
   // Функция отрисовки таблицы с клиентами
   async function render(tbody, userItem, handlers, data) {
-    tbody.innerHTML = '';
+    tbody.innerHTML = "";
     data.map((item) => tbody.append(userItem(item, handlers)));
   }
 
   // Получаем данные клиентов
   async function getDataClients() {
-    const response = await fetch('http://localhost:3000/api/clients');
+    const response = await fetch("http://localhost:3000/api/clients");
     const data = await response.json();
 
     return data;
@@ -794,13 +845,13 @@
   async function filter(tbody, userItem, handlers, data, value) {
     let result = data.filter((elem) => {
       for (const user in elem) {
-        if (user === 'contacts') {
+        if (user === "contacts") {
           for (const contact of elem.contacts) {
             if (contact.value.includes(value)) return true;
           }
         }
         if (
-          `${elem['surname']} ${elem['name']} ${elem['lastName']}`.includes(
+          `${elem["surname"]} ${elem["name"]} ${elem["lastName"]}`.includes(
             value
           ) ||
           elem[user].includes(value)
@@ -814,7 +865,7 @@
   }
 
   async function createApp() {
-    const container = document.getElementById('container');
+    const container = document.getElementById("container");
     const logo = createLogo();
     const search = createFormSearch();
     const header = createHeader();
@@ -839,8 +890,8 @@
         container.append(createModalAddClient(handlers, true, dataUser));
       },
       async onSave(data, element) {
-        const response = await fetch('http://localhost:3000/api/clients', {
-          method: 'POST',
+        const response = await fetch("http://localhost:3000/api/clients", {
+          method: "POST",
           body: JSON.stringify({
             name: data.name,
             surname: data.surname,
@@ -848,17 +899,17 @@
             contacts: data.contacts,
           }),
           headers: {
-            'Content-Type': 'application/json',
+            "Content-Type": "application/json",
           },
         });
 
-        tbody.innerHTML = '';
+        tbody.innerHTML = "";
         render(tbody, userItem, handlers, await getDataClients());
-        element.remove();
+        // element.remove();
       },
       async onEdit(data, element, id) {
         await fetch(`http://localhost:3000/api/clients/${id}`, {
-          method: 'PATCH',
+          method: "PATCH",
           body: JSON.stringify({
             name: data.name,
             surname: data.surname,
@@ -866,39 +917,39 @@
             contacts: data.contacts,
           }),
           headers: {
-            'Content-Type': 'application/json',
+            "Content-Type": "application/json",
           },
         });
 
-        tbody.innerHTML = '';
+        tbody.innerHTML = "";
         render(tbody, userItem, handlers, await getDataClients());
 
-        element.remove();
+        // element.remove();
       },
       async onDelete(data, element) {
         await fetch(`http://localhost:3000/api/clients/${data.id}`, {
-          method: 'DELETE',
+          method: "DELETE",
         });
         this.onClose(element);
 
-        tbody.innerHTML = '';
+        tbody.innerHTML = "";
 
-        const response = await fetch('http://localhost:3000/api/clients');
+        const response = await fetch("http://localhost:3000/api/clients");
         const dataUser = await response.json();
 
         for (const item of dataUser) tbody.append(userItem(item, handlers));
       },
     };
     const userNull = {
-      name: '',
-      surname: '',
-      lastName: '',
-      id: '',
+      name: "",
+      surname: "",
+      lastName: "",
+      id: "",
     };
 
     render(tbody, userItem, handlers, dataClients);
 
-    search.input.addEventListener('input', () => {
+    search.input.addEventListener("input", () => {
       setTimeout(async () => {
         filter(
           tbody,
@@ -919,34 +970,34 @@
     tableContainer.tableWrapper.append(table);
     tableContainer.tableWrapper.append(tbody);
 
-    btnAddUser.addEventListener('click', () => {
+    btnAddUser.addEventListener("click", () => {
       container.append(createModalAddClient(handlers, false, userNull));
     });
 
     let dirId = false;
 
     document
-      .querySelector('.table__btn-id')
-      .addEventListener('click', async () => {
-        const arrow = document.querySelector('.table__arrow-id');
+      .querySelector(".table__btn-id")
+      .addEventListener("click", async () => {
+        const arrow = document.querySelector(".table__arrow-id");
         dirId
-          ? arrow.classList.add('table__arrow-id-active')
-          : arrow.classList.remove('table__arrow-id-active');
-        sorting('id', userItem, tbody, handlers, await getDataClients(), dirId);
+          ? arrow.classList.add("table__arrow-id-active")
+          : arrow.classList.remove("table__arrow-id-active");
+        sorting("id", userItem, tbody, handlers, await getDataClients(), dirId);
         dirId = !dirId;
       });
 
     let dirName = false;
 
     document
-      .querySelector('.table__btn-full-name')
-      .addEventListener('click', async () => {
-        const arrow = document.querySelector('.table__arrow-full-name');
+      .querySelector(".table__btn-full-name")
+      .addEventListener("click", async () => {
+        const arrow = document.querySelector(".table__arrow-full-name");
         !dirName
-          ? arrow.classList.add('table__arrow-full-name-active')
-          : arrow.classList.remove('table__arrow-full-name-active');
+          ? arrow.classList.add("table__arrow-full-name-active")
+          : arrow.classList.remove("table__arrow-full-name-active");
         sorting(
-          'name',
+          "name",
           userItem,
           tbody,
           handlers,
@@ -959,14 +1010,14 @@
     let dirCreate = false;
 
     document
-      .querySelector('.table__btn-create')
-      .addEventListener('click', async () => {
-        const arrow = document.querySelector('.table__arrow-create');
+      .querySelector(".table__btn-create")
+      .addEventListener("click", async () => {
+        const arrow = document.querySelector(".table__arrow-create");
         dirCreate
-          ? arrow.classList.add('table__arrow-create-active')
-          : arrow.classList.remove('table__arrow-create-active');
+          ? arrow.classList.add("table__arrow-create-active")
+          : arrow.classList.remove("table__arrow-create-active");
         sorting(
-          'createdAt',
+          "createdAt",
           userItem,
           tbody,
           handlers,
@@ -979,14 +1030,14 @@
     let dirChange = false;
 
     document
-      .querySelector('.table__btn-change')
-      .addEventListener('click', async () => {
-        const arrow = document.querySelector('.table__arrow-change');
+      .querySelector(".table__btn-change")
+      .addEventListener("click", async () => {
+        const arrow = document.querySelector(".table__arrow-change");
         dirChange
-          ? arrow.classList.add('table__arrow-change-active')
-          : arrow.classList.remove('table__arrow-change-active');
+          ? arrow.classList.add("table__arrow-change-active")
+          : arrow.classList.remove("table__arrow-change-active");
         sorting(
-          'updatedAt',
+          "updatedAt",
           userItem,
           tbody,
           handlers,

@@ -1,25 +1,25 @@
 @font-face {
-  font-family: 'OpenSans';
-  src: url('../fonts/OpenSansBold.woff2') format('woff2'),
-    url('../fonts/OpenSansBold.woff') format('woff');
+  font-family: "OpenSans";
+  src: url("../fonts/OpenSansBold.woff2") format("woff2"),
+    url("../fonts/OpenSansBold.woff") format("woff");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'OpenSans';
-  src: url('../fonts/OpenSansSemiBold.woff2') format('woff2'),
-    url('../fonts/OpenSansSemiBold.woff') format('woff');
+  font-family: "OpenSans";
+  src: url("../fonts/OpenSansSemiBold.woff2") format("woff2"),
+    url("../fonts/OpenSansSemiBold.woff") format("woff");
   font-weight: 600;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'OpenSans';
-  src: url('../fonts/OpenSansRegular.woff2') format('woff2'),
-    url('../fonts/OpenSansRegular.woff') format('woff');
+  font-family: "OpenSans";
+  src: url("../fonts/OpenSansRegular.woff2") format("woff2"),
+    url("../fonts/OpenSansRegular.woff") format("woff");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -47,7 +47,7 @@ img {
 
 body {
   background-color: #f5f5f5;
-  font-family: 'OpenSans', sans-serif;
+  font-family: "OpenSans", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 19px;
@@ -208,7 +208,7 @@ body {
   padding-left: 19px;
 }
 .table__btn-id::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   right: -10px;
@@ -238,7 +238,7 @@ body {
 }
 
 .table__btn-full-name::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -545,7 +545,7 @@ body {
 }
 
 .modal__input-wrapper--surname::before {
-  content: 'Фамилия';
+  content: "Фамилия";
   position: absolute;
   top: 0;
   left: 0;
@@ -556,7 +556,7 @@ body {
 }
 
 .modal__input-wrapper--surname::after {
-  content: '*';
+  content: "*";
   position: absolute;
   top: 0;
   left: 46px;
@@ -567,7 +567,7 @@ body {
 }
 
 .modal__input-wrapper--name::before {
-  content: 'Имя';
+  content: "Имя";
   position: absolute;
   top: 0;
   left: 0;
@@ -578,7 +578,7 @@ body {
 }
 
 .modal__input-wrapper--name::after {
-  content: '*';
+  content: "*";
   position: absolute;
   top: 0;
   left: 22px;
@@ -593,7 +593,7 @@ body {
 }
 
 .modal__input-wrapper--last-name::before {
-  content: 'Отчество';
+  content: "Отчество";
   position: absolute;
   top: 0;
   left: 0;
@@ -621,7 +621,7 @@ body {
 }
 
 .contacts::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   right: -30px;
@@ -650,12 +650,19 @@ body {
 }
 
 .contacts__item {
+  position: relative;
   display: flex;
   width: 100%;
 }
 
 .contacts__item:not(:last-child) {
   margin-bottom: 15px;
+}
+
+.contacts__error {
+  position: absolute;
+  top: 100%;
+  color: red;
 }
 
 /* choices */
@@ -670,7 +677,7 @@ body {
   border-radius: 0;
 }
 
-.choices[data-type*='select-one'] .choices__inner {
+.choices[data-type*="select-one"] .choices__inner {
   padding: 9px 11px;
   padding-right: 5px;
 }
@@ -690,7 +697,7 @@ body {
   background: #e7e5eb;
 }
 
-.choices[data-type*='select-one']::after {
+.choices[data-type*="select-one"]::after {
   top: 50%;
   right: 8px;
   margin: 0;
@@ -701,7 +708,7 @@ body {
   background: url(../img/choices-down.svg) right center/contain no-repeat;
 }
 
-.choices[data-type*='select-one'].is-open::after {
+.choices[data-type*="select-one"].is-open::after {
   transform: rotate(180deg);
 }
 
@@ -820,7 +827,7 @@ body {
 
 .modal__cancel::after {
   position: absolute;
-  content: '';
+  content: "";
   top: 80%;
   left: 0;
   height: 1px;
@@ -925,7 +932,7 @@ body {
 }
 
 .delete__cancel::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 85%;
   width: 100%;
@@ -946,6 +953,11 @@ body {
   font-weight: 700;
   font-size: 12px;
   line-height: 16px;
+}
+
+.just-validate-error-label {
+  position: absolute;
+  top: 100%;
 }
 
 @media (max-width: 1365px) {
@@ -1171,7 +1183,7 @@ body {
     width: 110px;
   }
 
-  .choices[data-type*='select-one'] .choices__inner {
+  .choices[data-type*="select-one"] .choices__inner {
     width: 110px;
   }
 
