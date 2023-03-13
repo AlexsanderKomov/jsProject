@@ -487,19 +487,24 @@
     form.addEventListener("submit", (e) => {
       e.preventDefault();
 
-      let result = null;
+      const contactTypes = document.querySelectorAll(
+        ".choices__list.choices__list--single"
+      );
+      const contactValues = document.querySelectorAll(".contacts__value");
 
-      const inputAll = document.querySelectorAll(".contacts__value");
-
-      for (const item of inputAll) {
-        if (item.value === "") {
-          result = true;
-        } else {
-          result = false;
+      for (let i = 0; i < contactTypes.length; i++) {
+        if (
+          !validateClientContact(
+            contactTypes[i],
+            contactValues[i],
+            form,
+            btnSave
+          )
+        ) {
         }
       }
 
-      if (nameInput.value === "" || surnameInput.value === "" || result) {
+      if (!nameInput.value || !surnameInput.value) {
         return;
       } else {
         const data = {
@@ -590,26 +595,36 @@
   }
 
   // Валидация контактов
-  // function validate(form) {
-  //   const validation = new JustValidate(form, {
-  //     errorFieldCssClass: "is-invalid",
-  //   });
+  function validateClientContact(type, value, form, save) {
+    const errorsValidate = document.querySelectorAll(
+      ".just-validate-error-label"
+    );
 
-  //   const valueInputAll = document.querySelectorAll(".contacts__value");
+    for (const item of errorsValidate) {
+      item.remove();
+      console.log(item);
+    }
 
-  //   for (let i = 0; i < valueInputAll.length; i++) {
-  //     valueInputAll[i].id = `contacts__value--${i + 1}`;
-  //     validation.addField(
-  //       document.querySelector(`#contacts__value--${i + 1}`),
-  //       [
-  //         {
-  //           rule: "required",
-  //           errorMessage: "Обязательное поле",
-  //         },
-  //       ]
-  //     );
-  //   }
-  // }
+    const validation = new JustValidate(form, {
+      errorFieldCssClass: "is-invalid",
+    });
+
+    switch (type.textContent) {
+      case "Телефон":
+        validation.addField(value, [
+          {
+            rule: "required",
+            errorMessage: "Обязательное поле",
+          },
+        ]);
+        // save.disabled = true;
+        save.style.opacity = "0.5";
+        return;
+      case "Email":
+      default:
+        return true;
+    }
+  }
 
   // Создаем item контакта
   function createItemContact(
@@ -688,6 +703,7 @@
     item.append(select);
     item.append(valueOption);
     item.append(deleteValue);
+    item.append(error);
     select.append(optionTel);
     select.append(optionEmail);
     select.append(optionVk);
@@ -715,16 +731,6 @@
     });
 
     valueOption.addEventListener("input", () => {
-      if (valueOption.value === "") {
-        item.append(error);
-        error.innerText = "Ошибка";
-      } else if (valueOption.value.length < 3) {
-        item.append(error);
-        error.innerText = "Длина меньше 3 символов";
-      } else {
-        error.remove();
-      }
-
       instance.setContent("Очистить контакт");
     });
 
